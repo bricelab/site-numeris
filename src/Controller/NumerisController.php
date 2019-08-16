@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class NumerisController extends AbstractController
 {
     /**
-     * @Route("/numeris", name="numeris")
+     * @Route("/", name="numeris")
      */
     public function index()
     {
