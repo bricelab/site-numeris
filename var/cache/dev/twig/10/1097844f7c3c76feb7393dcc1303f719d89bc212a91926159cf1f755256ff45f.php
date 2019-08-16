@@ -51,28 +51,52 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 
 \t<title>NUMERIS</title>
 \t<!-- Favicons -->
-\t<link href=\"img/N.png\" rel=\"icon\">
-\t<link href=\"img/N02.png\" rel=\"apple-touch-icon\">
+\t<link href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/img/N.png")), "html", null, true);
+        echo "\" rel=\"icon\">
+\t<link href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/img/N02.png")), "html", null, true);
+        echo "\" rel=\"apple-touch-icon\">
 
 \t<!-- Google font -->
 \t<link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round\" rel=\"stylesheet\">
-    <link rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.min.css\">
+    <!--link rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.min.css\"-->
 
 \t<!-- Bootstrap -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/css/bootstrap.min.css")), "html", null, true);
+        echo "\" />
 
 \t<!-- Owl Carousel -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/owl.carousel.css\" />
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/owl.theme.default.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+        // line 23
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/css/owl.carousel.css")), "html", null, true);
+        echo "\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/css/owl.theme.default.css")), "html", null, true);
+        echo "\" />
 
 \t<!-- Magnific Popup -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/magnific-popup.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/css/magnific-popup.css")), "html", null, true);
+        echo "\" />
 
 \t<!-- Font Awesome Icon -->
-\t<link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">
+\t<link rel=\"stylesheet\" href=\"";
+        // line 30
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/css/font-awesome.min.css")), "html", null, true);
+        echo "\">
 
 \t<!-- Custom stlylesheet -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/style.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+        // line 33
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/css/style.css")), "html", null, true);
+        echo "\" />
 
 \t<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 \t<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,7 +110,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t<!-- Header -->
 \t<header id=\"home\">
 \t\t<!-- Background Image -->
-\t\t<div class=\"bg-img\" style=\"background-image: url('./img/5.jpg');\">
+\t\t<div class=\"bg-img\" style=\"background-image: url('./theme/img/5.jpg');\">
 \t\t\t<div class=\"overlay\"></div>
 \t\t</div>
 \t\t<!-- /Background Image -->
@@ -99,8 +123,8 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t<!-- Logo -->
 \t\t\t\t\t<div class=\"navbar-brand\">
 \t\t\t\t\t\t<a href=\"index.php\">
-\t\t\t\t\t\t\t<img class=\"logo\" src=\"img/numeris1.png\" alt=\"logo\">
-\t\t\t\t\t\t\t<img class=\"logo-alt\" src=\"img/numeris1.png\" alt=\"logo\">
+\t\t\t\t\t\t\t<img class=\"logo\" src=\"./theme/img/numeris1.png\" alt=\"logo\">
+\t\t\t\t\t\t\t<img class=\"logo-alt\" src=\"./theme/img/numeris1.png\" alt=\"logo\">
 \t\t\t\t\t\t</a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<!-- /Logo -->
@@ -281,7 +305,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t\t\t\t<div class=\"blog\">
 \t\t\t\t\t\t\t\t\t<div class=\"blog-img\">
-\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/webmail35.png\" alt=\"\">
+\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/webmail35.png\" alt=\"\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"blog-content\">
 \t\t\t\t\t\t\t\t\t\t<h3> Messagerie collaborative BlueMind</h3>
@@ -304,7 +328,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t\t\t\t<div class=\"blog\">
 \t\t\t\t\t\t\t\t\t<div class=\"blog-img\">
-\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/bluemind.jpg\" alt=\"\">
+\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/bluemind.jpg\" alt=\"\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"blog-content\">
 \t\t\t\t\t\t\t\t\t\t<h3>Couverture fonctionnelle</h3>
@@ -328,7 +352,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t\t\t\t<div class=\"blog\">
 \t\t\t\t\t\t\t\t\t<div class=\"blog-img\">
-\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\"  src=\"./img/blue.png\" alt=\"\">
+\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\"  src=\"./theme/img/blue.png\" alt=\"\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"blog-content\">
 \t\t\t\t\t\t\t\t\t\t<h3>Clients Mobiles</h3>
@@ -646,10 +670,10 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t<!-- About slider -->
 \t\t\t\t<div class=\"col-md-6\">
 \t\t\t\t\t<div id=\"about-slider\" class=\"owl-carousel owl-theme\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/développeur-logiciel.jpg\" alt=\"\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/serv-resum.jpg\" alt=\"\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/equipement-informatique-large.jpg\" alt=\"\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/1.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/développeur-logiciel.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/serv-resum.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/equipement-informatique-large.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/1.jpg\" alt=\"\">
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t<!-- /About slider -->
@@ -744,7 +768,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 
 \t\t\t\t\t<!-- footer logo -->
 \t\t\t\t\t<div class=\"footer-logo\">
-\t\t\t\t\t\t<a href=\"index.php\"><img src=\"img/numeris1.png\" ></a>
+\t\t\t\t\t\t<a href=\"index.php\"><img src=\"./theme/img/numeris1.png\" ></a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<!-- /footer logo -->
 
@@ -792,11 +816,26 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t<!-- /Preloader -->
 
 \t<!-- jQuery Plugins -->
-\t<script type=\"text/javascript\" src=\"js/jquery.min.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/owl.carousel.min.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/jquery.magnific-popup.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/main.js\"></script>
+\t<script type=\"text/javascript\" src=\"";
+        // line 753
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/js/jquery.min.js")), "html", null, true);
+        echo "\"></script>
+\t<script type=\"text/javascript\" src=\"";
+        // line 754
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/js/bootstrap.min.js")), "html", null, true);
+        echo "\"></script>
+\t<script type=\"text/javascript\" src=\"";
+        // line 755
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/js/owl.carousel.min.js")), "html", null, true);
+        echo "\"></script>
+\t<script type=\"text/javascript\" src=\"";
+        // line 756
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/js/jquery.magnific-popup.js")), "html", null, true);
+        echo "\"></script>
+\t<script type=\"text/javascript\" src=\"";
+        // line 757
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\HttpFoundationExtension']->generateAbsoluteUrl($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("theme/js/main.js")), "html", null, true);
+        echo "\"></script>
 
 </body>
 
@@ -815,9 +854,14 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  837 => 757,  833 => 756,  829 => 755,  825 => 754,  821 => 753,  98 => 33,  92 => 30,  86 => 27,  80 => 24,  76 => 23,  70 => 20,  60 => 13,  56 => 12,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -833,28 +877,28 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 
 \t<title>NUMERIS</title>
 \t<!-- Favicons -->
-\t<link href=\"img/N.png\" rel=\"icon\">
-\t<link href=\"img/N02.png\" rel=\"apple-touch-icon\">
+\t<link href=\"{{ absolute_url(asset(\"theme/img/N.png\")) }}\" rel=\"icon\">
+\t<link href=\"{{ absolute_url(asset(\"theme/img/N02.png\")) }}\" rel=\"apple-touch-icon\">
 
 \t<!-- Google font -->
 \t<link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round\" rel=\"stylesheet\">
-    <link rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.min.css\">
+    <!--link rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.min.css\"-->
 
 \t<!-- Bootstrap -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"{{ absolute_url(asset(\"theme/css/bootstrap.min.css\")) }}\" />
 
 \t<!-- Owl Carousel -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/owl.carousel.css\" />
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/owl.theme.default.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"{{ absolute_url(asset(\"theme/css/owl.carousel.css\")) }}\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"{{ absolute_url(asset(\"theme/css/owl.theme.default.css\")) }}\" />
 
 \t<!-- Magnific Popup -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/magnific-popup.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"{{ absolute_url(asset(\"theme/css/magnific-popup.css\")) }}\" />
 
 \t<!-- Font Awesome Icon -->
-\t<link rel=\"stylesheet\" href=\"css/font-awesome.min.css\">
+\t<link rel=\"stylesheet\" href=\"{{ absolute_url(asset(\"theme/css/font-awesome.min.css\")) }}\">
 
 \t<!-- Custom stlylesheet -->
-\t<link type=\"text/css\" rel=\"stylesheet\" href=\"css/style.css\" />
+\t<link type=\"text/css\" rel=\"stylesheet\" href=\"{{ absolute_url(asset(\"theme/css/style.css\")) }}\" />
 
 \t<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 \t<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -868,7 +912,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t<!-- Header -->
 \t<header id=\"home\">
 \t\t<!-- Background Image -->
-\t\t<div class=\"bg-img\" style=\"background-image: url('./img/5.jpg');\">
+\t\t<div class=\"bg-img\" style=\"background-image: url('./theme/img/5.jpg');\">
 \t\t\t<div class=\"overlay\"></div>
 \t\t</div>
 \t\t<!-- /Background Image -->
@@ -881,8 +925,8 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t<!-- Logo -->
 \t\t\t\t\t<div class=\"navbar-brand\">
 \t\t\t\t\t\t<a href=\"index.php\">
-\t\t\t\t\t\t\t<img class=\"logo\" src=\"img/numeris1.png\" alt=\"logo\">
-\t\t\t\t\t\t\t<img class=\"logo-alt\" src=\"img/numeris1.png\" alt=\"logo\">
+\t\t\t\t\t\t\t<img class=\"logo\" src=\"./theme/img/numeris1.png\" alt=\"logo\">
+\t\t\t\t\t\t\t<img class=\"logo-alt\" src=\"./theme/img/numeris1.png\" alt=\"logo\">
 \t\t\t\t\t\t</a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<!-- /Logo -->
@@ -1063,7 +1107,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t\t\t\t<div class=\"blog\">
 \t\t\t\t\t\t\t\t\t<div class=\"blog-img\">
-\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/webmail35.png\" alt=\"\">
+\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/webmail35.png\" alt=\"\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"blog-content\">
 \t\t\t\t\t\t\t\t\t\t<h3> Messagerie collaborative BlueMind</h3>
@@ -1086,7 +1130,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t\t\t\t<div class=\"blog\">
 \t\t\t\t\t\t\t\t\t<div class=\"blog-img\">
-\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/bluemind.jpg\" alt=\"\">
+\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/bluemind.jpg\" alt=\"\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"blog-content\">
 \t\t\t\t\t\t\t\t\t\t<h3>Couverture fonctionnelle</h3>
@@ -1110,7 +1154,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t\t\t\t<div class=\"col-md-4\">
 \t\t\t\t\t\t\t\t<div class=\"blog\">
 \t\t\t\t\t\t\t\t\t<div class=\"blog-img\">
-\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\"  src=\"./img/blue.png\" alt=\"\">
+\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\"  src=\"./theme/img/blue.png\" alt=\"\">
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<div class=\"blog-content\">
 \t\t\t\t\t\t\t\t\t\t<h3>Clients Mobiles</h3>
@@ -1428,10 +1472,10 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t\t\t\t<!-- About slider -->
 \t\t\t\t<div class=\"col-md-6\">
 \t\t\t\t\t<div id=\"about-slider\" class=\"owl-carousel owl-theme\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/développeur-logiciel.jpg\" alt=\"\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/serv-resum.jpg\" alt=\"\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/equipement-informatique-large.jpg\" alt=\"\">
-\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./img/1.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/développeur-logiciel.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/serv-resum.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/equipement-informatique-large.jpg\" alt=\"\">
+\t\t\t\t\t\t<img class=\"img-responsive\" src=\"./theme/img/1.jpg\" alt=\"\">
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t<!-- /About slider -->
@@ -1526,7 +1570,7 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 
 \t\t\t\t\t<!-- footer logo -->
 \t\t\t\t\t<div class=\"footer-logo\">
-\t\t\t\t\t\t<a href=\"index.php\"><img src=\"img/numeris1.png\" ></a>
+\t\t\t\t\t\t<a href=\"index.php\"><img src=\"./theme/img/numeris1.png\" ></a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<!-- /footer logo -->
 
@@ -1574,11 +1618,11 @@ class __TwigTemplate_bba37f563a5e776d38bf009e5eb5758fe244c8d7e87958a2d3f9274361d
 \t<!-- /Preloader -->
 
 \t<!-- jQuery Plugins -->
-\t<script type=\"text/javascript\" src=\"js/jquery.min.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/bootstrap.min.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/owl.carousel.min.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/jquery.magnific-popup.js\"></script>
-\t<script type=\"text/javascript\" src=\"js/main.js\"></script>
+\t<script type=\"text/javascript\" src=\"{{ absolute_url(asset(\"theme/js/jquery.min.js\")) }}\"></script>
+\t<script type=\"text/javascript\" src=\"{{ absolute_url(asset(\"theme/js/bootstrap.min.js\")) }}\"></script>
+\t<script type=\"text/javascript\" src=\"{{ absolute_url(asset(\"theme/js/owl.carousel.min.js\")) }}\"></script>
+\t<script type=\"text/javascript\" src=\"{{ absolute_url(asset(\"theme/js/jquery.magnific-popup.js\")) }}\"></script>
+\t<script type=\"text/javascript\" src=\"{{ absolute_url(asset(\"theme/js/main.js\")) }}\"></script>
 
 </body>
 

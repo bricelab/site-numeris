@@ -9,28 +9,28 @@
 
 	<title>NUMERIS</title>
 	<!-- Favicons -->
-	<link href="img/N.png" rel="icon">
-	<link href="img/N02.png" rel="apple-touch-icon">
+	<link href="{{ absolute_url(asset("theme/img/N.png")) }}" rel="icon">
+	<link href="{{ absolute_url(asset("theme/img/N02.png")) }}" rel="apple-touch-icon">
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
-    <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
+    <!--link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css"-->
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="{{ absolute_url(asset("theme/css/bootstrap.min.css")) }}" />
 
 	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+	<link type="text/css" rel="stylesheet" href="{{ absolute_url(asset("theme/css/owl.carousel.css")) }}" />
+	<link type="text/css" rel="stylesheet" href="{{ absolute_url(asset("theme/css/owl.theme.default.css")) }}" />
 
 	<!-- Magnific Popup -->
-	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+	<link type="text/css" rel="stylesheet" href="{{ absolute_url(asset("theme/css/magnific-popup.css")) }}" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ absolute_url(asset("theme/css/font-awesome.min.css")) }}">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="{{ absolute_url(asset("theme/css/style.css")) }}" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +44,7 @@
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/5.jpg');">
+		<div class="bg-img" style="background-image: url('./theme/img/5.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -57,8 +57,8 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a href="index.php">
-							<img class="logo" src="img/numeris1.png" alt="logo">
-							<img class="logo-alt" src="img/numeris1.png" alt="logo">
+							<img class="logo" src="./theme/img/numeris1.png" alt="logo">
+							<img class="logo-alt" src="./theme/img/numeris1.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -239,7 +239,7 @@
 							<div class="col-md-4">
 								<div class="blog">
 									<div class="blog-img">
-										<img class="img-responsive" src="./img/webmail35.png" alt="">
+										<img class="img-responsive" src="./theme/img/webmail35.png" alt="">
 									</div>
 									<div class="blog-content">
 										<h3> Messagerie collaborative BlueMind</h3>
@@ -262,7 +262,7 @@
 							<div class="col-md-4">
 								<div class="blog">
 									<div class="blog-img">
-										<img class="img-responsive" src="./img/bluemind.jpg" alt="">
+										<img class="img-responsive" src="./theme/img/bluemind.jpg" alt="">
 									</div>
 									<div class="blog-content">
 										<h3>Couverture fonctionnelle</h3>
@@ -286,7 +286,7 @@
 							<div class="col-md-4">
 								<div class="blog">
 									<div class="blog-img">
-										<img class="img-responsive"  src="./img/blue.png" alt="">
+										<img class="img-responsive"  src="./theme/img/blue.png" alt="">
 									</div>
 									<div class="blog-content">
 										<h3>Clients Mobiles</h3>
@@ -604,10 +604,10 @@
 				<!-- About slider -->
 				<div class="col-md-6">
 					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="./img/développeur-logiciel.jpg" alt="">
-						<img class="img-responsive" src="./img/serv-resum.jpg" alt="">
-						<img class="img-responsive" src="./img/equipement-informatique-large.jpg" alt="">
-						<img class="img-responsive" src="./img/1.jpg" alt="">
+						<img class="img-responsive" src="./theme/img/développeur-logiciel.jpg" alt="">
+						<img class="img-responsive" src="./theme/img/serv-resum.jpg" alt="">
+						<img class="img-responsive" src="./theme/img/equipement-informatique-large.jpg" alt="">
+						<img class="img-responsive" src="./theme/img/1.jpg" alt="">
 					</div>
 				</div>
 				<!-- /About slider -->
@@ -702,7 +702,7 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.php"><img src="img/numeris1.png" ></a>
+						<a href="index.php"><img src="./theme/img/numeris1.png" ></a>
 					</div>
 					<!-- /footer logo -->
 
@@ -750,11 +750,11 @@
 	<!-- /Preloader -->
 
 	<!-- jQuery Plugins -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="{{ absolute_url(asset("theme/js/jquery.min.js")) }}"></script>
+	<script type="text/javascript" src="{{ absolute_url(asset("theme/js/bootstrap.min.js")) }}"></script>
+	<script type="text/javascript" src="{{ absolute_url(asset("theme/js/owl.carousel.min.js")) }}"></script>
+	<script type="text/javascript" src="{{ absolute_url(asset("theme/js/jquery.magnific-popup.js")) }}"></script>
+	<script type="text/javascript" src="{{ absolute_url(asset("theme/js/main.js")) }}"></script>
 
 </body>
 
