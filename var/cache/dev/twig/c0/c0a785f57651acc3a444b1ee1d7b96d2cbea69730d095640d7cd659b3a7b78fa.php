@@ -162,6 +162,6 @@ class __TwigTemplate_f43af7f9063555e5d51d51863c1abb9d7d0d21fadf3932a6f8d3f21c478
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: false }) }}
 {% endblock %}
-", "@WebProfiler/Collector/ajax.html.twig", "C:\\laragon\\www\\numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\ajax.html.twig");
+", "@WebProfiler/Collector/ajax.html.twig", "C:\\laragon\\www\\site-numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\ajax.html.twig");
     }
 }

@@ -482,6 +482,6 @@ class __TwigTemplate_f762773e23f5983bbcf5afa653f57a1d14b764f157e510151de3d719ac4
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\laragon\\www\\numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\laragon\\www\\site-numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

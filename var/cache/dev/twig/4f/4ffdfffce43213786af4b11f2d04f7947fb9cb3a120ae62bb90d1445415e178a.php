@@ -471,6 +471,6 @@ class __TwigTemplate_c2281430fad707e42aa53d4396cc9fd935a4b0df43cfb93125cb3a6701f
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "C:\\laragon\\www\\numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "C:\\laragon\\www\\site-numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
     }
 }

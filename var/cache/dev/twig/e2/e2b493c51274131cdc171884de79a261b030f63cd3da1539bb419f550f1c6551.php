@@ -1175,6 +1175,6 @@ class __TwigTemplate_b23521fa962b999921c6247ab5ebaba835ad071f7ea7852165ebce8d380
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "C:\\laragon\\www\\numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "C:\\laragon\\www\\site-numeris\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
     }
 }

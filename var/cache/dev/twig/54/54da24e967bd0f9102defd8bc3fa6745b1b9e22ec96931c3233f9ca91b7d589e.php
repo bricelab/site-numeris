@@ -72,6 +72,6 @@ class __TwigTemplate_6bd5b9f82f0c6cb6e33541310093772437b67d10b103e35cea19731b530
     {
         return new Source("{% extends 'base.html.twig' %}
 
-", "numeris/index.html.twig", "C:\\laragon\\www\\numeris\\templates\\numeris\\index.html.twig");
+", "numeris/index.html.twig", "C:\\laragon\\www\\site-numeris\\templates\\numeris\\index.html.twig");
     }
 }

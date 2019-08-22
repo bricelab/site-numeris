@@ -1828,6 +1828,6 @@ class __TwigTemplate_b438a657f7d6974dd8d397648d344be04a780c81c27d0cfa024d4ae7464
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "C:\\laragon\\www\\numeris\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "C:\\laragon\\www\\site-numeris\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
     }
 }
