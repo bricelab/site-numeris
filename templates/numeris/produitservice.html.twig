@@ -1,6 +1,15 @@
-<!-- Container -->
+{% extends 'base.html.twig' %}
+
+{% block backgroundimage %}
+	<div class="bg-img" style="background-image: url('./theme/img/5.jpg');">
+		<div class="overlay"></div>
+	</div>	
+{% endblock %}
+
+{% block about %}
+	<!-- Container -->
 				<!-- Blog -->
-				<div id="blog" class="section md-padding bg-grey">
+				<div id="blog" class="fixed-top section md-padding bg-grey">
 
 					<!-- Container -->
 					<div class="container">
@@ -250,22 +259,22 @@
 	<!-- /Portfolio -->
 
 	<!-- Service -->
-	<div id="service" class="section md-padding">
+	<div id="" class="section md-padding">
 
 		<!-- Container -->
-		<div class="container">
+		<div id="service" class="container">
 
 			<!-- Row -->
 			<div class="row">
 
 				<!-- Section header -->
-				<div class="section-header text-center">
+				<div id="" class="section-header text-center">
 					<h2 class="title">Services</h2>
 				</div>
 				<!-- /Section header -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div id="" class="col-md-4 col-sm-6">
 					<div class="service">
 						<i class="fa fa-diamond"></i>
 						<h3>Ingénierie Web & Logicielle </h3>
@@ -332,3 +341,4 @@
 
 	</div>
 	<!-- /Service -->
+{% endblock %}
