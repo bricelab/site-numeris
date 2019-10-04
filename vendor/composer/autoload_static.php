@@ -100,6 +100,10 @@ class ComposerStaticInit60d0f3c7d53f20c467a8e4be9e925984
             'Symfony\\Bridge\\Doctrine\\' => 24,
             'Sensio\\Bundle\\FrameworkExtraBundle\\' => 35,
         ),
+        'R' => 
+        array (
+            'ReCaptcha\\' => 10,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -121,6 +125,7 @@ class ComposerStaticInit60d0f3c7d53f20c467a8e4be9e925984
         array (
             'Egulias\\EmailValidator\\' => 23,
             'EasyCorp\\EasyLog\\' => 17,
+            'EWZ\\Bundle\\RecaptchaBundle\\' => 27,
         ),
         'D' => 
         array (
@@ -416,6 +421,10 @@ class ComposerStaticInit60d0f3c7d53f20c467a8e4be9e925984
         array (
             0 => __DIR__ . '/..' . '/sensio/framework-extra-bundle',
         ),
+        'ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -455,6 +464,10 @@ class ComposerStaticInit60d0f3c7d53f20c467a8e4be9e925984
         'EasyCorp\\EasyLog\\' => 
         array (
             0 => __DIR__ . '/..' . '/easycorp/easy-log-handler/src',
+        ),
+        'EWZ\\Bundle\\RecaptchaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/excelwebzone/recaptcha-bundle/src',
         ),
         'Doctrine\\ORM\\' => 
         array (

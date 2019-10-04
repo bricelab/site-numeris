@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
+{% block metadescription %}
+	<meta name="description" content="NUMERIS est une sociéte de service et dingénierie en informatique (ssii) Béninoise ">
+{% endblock %}
+
 {% block backgroundimage %}
 	<div class="bg-img" style="background-image: url('./theme/img/5.jpg');">
 		<div class="overlay"></div>
@@ -8,15 +12,15 @@
 
 {% block homewrapper %}
 	<div class="home-wrapper">
-			<div class="container">
-				<div class="row">
+		<div class="container">
+			<div class="row">
 
-					<!-- home content -->
-					<div class="col-md-10 col-md-offset-1">
-						<div class="home-content">
-							<h1 class="white-text">Plus qu'un client, vous êtes un partenaire</h1>
-							<p class="white-text">
-							</p>
+				<!-- home content -->
+				<div class="col-md-10 col-md-offset-1">
+					<div class="home-content">
+						<h1 class="white-text">Plus qu'un client, vous êtes un partenaire</h1>
+						<p class="white-text">
+						</p>
 							<!--<button class="white-btn">Get Started!</button>
 							<button class="main-btn">Learn more</button>-->
 						</div>
@@ -27,10 +31,111 @@
 			</div>
 		</div>
 
-{% endblock %}
+	{% endblock %}
 
-{% block about %}
-    <div id="about" class="section md-padding">
+	{% block about %}
+		<div id="about" class="section md-padding">
+
+			<!-- Container -->
+			<div class="container">
+
+				<!-- Row -->
+				<div class="row">
+
+					<!-- Section header -->
+					<div class="section-header text-center">
+						<h2 class="title">NUMERIS</h2>
+					</div>
+					<!-- /Section header -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-home"></i>
+							<h3>NUMERIS SARL</h3>
+							<p>Capital de 2.000.000 FCFA <br/>Siège social : Carré n°1148 HOUEHOUN, Cotonou, Bénin<br/>
+								RCCM : RB/COT/19 B 23360 – IFU : 3201910583176
+							</p>
+							<!--						<a href="#">Read more</a>-->
+
+							<br>
+							<br>
+
+						</div>
+					</div>
+					<!-- /about -->
+
+					<!-- about -->
+					<div class="col-md-4">
+						<div class="about">
+							<i class="fa fa-desktop"></i>
+							<h3>Domaines d'activités</h3>
+							<p>
+								<ul>
+									<li>
+										Messagerie collaborative Cloud
+									</li>
+									<li>
+										Messagerie collaborative On Premise
+									</li>
+									<li>
+										Intégration de solutions Open Source
+									</li>
+									<li>
+										Réseau – Système – Sécurité
+									</li>
+									<li>
+										Infogérance
+									</li> <li>
+									Conseil – Assistance – Formation
+								</li> <li>
+								Centre Pearson Vue (en cours)
+							</li>
+						</ul>
+					</p>
+					<!-- <a href="#">Read more</a>-->
+				</div>
+			</div>
+			<!-- /about -->
+
+			<!-- about -->
+			<div class="col-md-4">
+				<div class="about">
+					<i class="fa fa-group"></i>
+					<h3>Cibles</h3>
+					<p>
+						<ul >
+							<li>
+								Particuliers
+							</li>
+							<li>
+								Petites et Moyennes Entreprises
+							</li>
+							<li>
+								Universités – Ecoles – Lycées
+							</li>
+							<li>
+								Administrations publiques
+							</li>
+							<li>
+								Secteur privé
+							</li> <li>
+							Etc.
+						</li>
+					</ul></p>
+					<br>
+				</div>
+			</div>
+			<!-- /about -->
+
+		</div>
+		<!-- /Row -->
+
+	</div>
+	<!-- /Container -->
+	<!-- Container -->
+	<!-- Blog -->
+	<div id="blog" class="fixed-top section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
@@ -40,89 +145,78 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">NUMERIS</h2>
+					<h2 class="title">Messagerie collaborative</h2>
 				</div>
 				<!-- /Section header -->
 
-				<!-- about -->
-				<div class="col-md-12">
-					<div class="about">
-						<i class="fa fa-home"></i>
-						<h3>NUMERIS SARL</h3>
-						<p>Capital de 2.000.000 FCFA <br/>Siège social : Carré n°1148 HOUEHOUN, Cotonou, Bénin<br/>
-							RCCM : RB/COT/19 B 23360 – IFU : 3201910583176
-						</p>
-<!--						<a href="#">Read more</a>-->
-
-						<br>
-						<br>
-
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about 
+				<!-- blog -->
 				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-desktop"></i>
-						<h3>Domaines d'activités</h3>
-						<p>
-						<ul>
-							<li>
-								 Messagerie collaborative Cloud
-							</li>
-							<li>
-								 Messagerie collaborative On Premise
-							</li>
-							<li>
-								 Intégration de solutions Open Source
-							</li>
-							<li>
-								  Réseau – Système – Sécurité
-							</li>
-							<li>
-								 Infogérance
-							</li> <li>
-								 Conseil – Assistance – Formation
-							</li> <li>
-							Centre Pearson Vue (en cours)
-							</li>
-						</ul>
-						</p>
-						<!-- <a href="#">Read more</a>
-					</div>
-				</div>
-					 /about -->
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="./theme/img/webmail35.png" alt="">
+						</div>
+						<div class="blog-content">
+							<h3> Messagerie collaborative BlueMind</h3>
+							<p>
 
-				<!-- about -->
-				<div class="col-md-12">
-					<div class="about">
-						<i class="fa fa-group"></i>
-						<h3>Cibles</h3>
-						<p>
-						<ul >
-							<li>
-								Particuliers
-							</li>
-							<li>
-								 Petites et Moyennes Entreprises
-							</li>
-							<li>
-								  Universités – Ecoles – Lycées
-							</li>
-							<li>
-								 Administrations publiques
-							</li>
-							<li>
-								 Secteur privé
-							</li> <li>
-								 Etc.
-							</li>
-						</ul></p>
-						<br>
+								<ul>
+									<li>Envoi - Réception de mails</li>
+									<li>Boites de réception partagées</li>
+									<li>Carnets d’adresses (partagé)</li>
+									<li>Agenda (partagé)</li>
+									<li>Calendrier d’entreprise</li>
+								</ul>
+							</p>
+						</div>
 					</div>
 				</div>
-				<!-- /about -->
+				<!-- /blog -->
+
+				<!-- blog -->
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="./theme/img/bluemind.jpg" alt="">
+						</div>
+						<div class="blog-content">
+							<h3>Couverture fonctionnelle</h3>
+							<p>
+
+								<ul>
+									<li>Agendas</li>
+									<li>Contact</li>
+									<li>Messagerie</li>
+									<li>Tâches</li>
+									<li>Drive-Chat</li>
+									<li>VO-IP XIVO</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /blog -->
+
+				<!-- blog -->
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive"  src="./theme/img/blue.png" alt="">
+						</div>
+						<div class="blog-content">
+							<h3>Clients Mobiles</h3>
+							<p>
+								<ul>
+									<li>IOS,Androïd</li>
+									<li>Multi Agendas</li>
+									<li>ActiveSync natif</li>
+									<li>Multi Agendas</li>
+								</ul>
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /blog -->
 
 			</div>
 			<!-- /Row -->
@@ -131,7 +225,12 @@
 		<!-- /Container -->
 
 	</div>
+	<!-- /Blog -->
+	
+</div>
 {% endblock %}
+
+
 
 {% block whyus %}
 	<div id="features" class="section md-padding bg-grey">
@@ -150,53 +249,53 @@
 <!--					<p>isque purus.</p>
 
 -->					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Une équipe d'experts en informatique dynamique.</p>
-					</div>
+<i class="fa fa-check"></i>
+<p>Une équipe d'experts en informatique dynamique.</p>
+</div>
 
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Des services sécurisés et de qualités.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Accompagnement des entreprises dans l'acquisition et la mise en œuvre de leurs outils.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Nos solutions sont efficaces et économiques à un prix concurrentiel.
-							</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Nos prix sont attractifs et bien étudiés.</p>
-					</div>
-					<div class="feature">
-						<i class="fa fa-check"></i>
-						<p>Vous satisfaire est notre priorité.</p>
-					</div>
+<div class="feature">
+	<i class="fa fa-check"></i>
+	<p>Des services sécurisés et de qualités.</p>
+</div>
+<div class="feature">
+	<i class="fa fa-check"></i>
+	<p>Accompagnement des entreprises dans l'acquisition et la mise en œuvre de leurs outils.</p>
+</div>
+<div class="feature">
+	<i class="fa fa-check"></i>
+	<p>Nos solutions sont efficaces et économiques à un prix concurrentiel.
+	</p>
+</div>
+<div class="feature">
+	<i class="fa fa-check"></i>
+	<p>Nos prix sont attractifs et bien étudiés.</p>
+</div>
+<div class="feature">
+	<i class="fa fa-check"></i>
+	<p>Vous satisfaire est notre priorité.</p>
+</div>
 
-				</div>
-				<!-- /why choose us content -->
+</div>
+<!-- /why choose us content -->
 
-				<!-- About slider -->
-				<div class="col-md-6">
-					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="./theme/img/développeur-logiciel.jpg" alt="">
-						<img class="img-responsive" src="./theme/img/serv-resum.jpg" alt="">
-						<img class="img-responsive" src="./theme/img/equipement-informatique-large.jpg" alt="">
-						<img class="img-responsive" src="./theme/img/1.jpg" alt="">
-					</div>
-				</div>
-				<!-- /About slider -->
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
+<!-- About slider -->
+<div class="col-md-6">
+	<div id="about-slider" class="owl-carousel owl-theme">
+		<img class="img-responsive" src="./theme/img/développeur-logiciel.jpg" alt="">
+		<img class="img-responsive" src="./theme/img/serv-resum.jpg" alt="">
+		<img class="img-responsive" src="./theme/img/equipement-informatique-large.jpg" alt="">
+		<img class="img-responsive" src="./theme/img/1.jpg" alt="">
 	</div>
+</div>
+<!-- /About slider -->
+
+</div>
+<!-- /Row -->
+
+</div>
+<!-- /Container -->
+
+</div>
 {% endblock %}
 
 

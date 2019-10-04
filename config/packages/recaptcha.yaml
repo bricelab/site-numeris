@@ -1,0 +1,10 @@
+# app/config/config.yml
+
+ewz_recaptcha:
+    public_key:  6LfwEbgUAAAAAOhNm5x0p8tt2XbAIwPO7OQ-9F0o
+    private_key: 6LfwEbgUAAAAAAF7FlJiboI40fGrp7ddJDqycwa3
+    # Not needed as "%kernel.default_locale%" is the default value for the locale key
+    locale_key:  kernel.default_locale
+    locale_from_request: true
+    api_host: recaptcha.net
+    #verify_host: true

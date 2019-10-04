@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% block metadescription %}{% endblock %}
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>NUMERIS</title>
+	<title>NUMERIS {{ app.request.pathinfo|replace({'/': " ",'-': " "}) }}</title>
 	<!-- Favicons -->
 	<link href="{{ absolute_url(asset("theme/img/N.png")) }}" rel="icon">
 	<link href="{{ absolute_url(asset("theme/img/N02.png")) }}" rel="apple-touch-icon">
@@ -38,6 +39,11 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	  
+
+	  
+
+
 </head>
 
 <body>
@@ -54,7 +60,7 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a href="index.php">
+						<a href="/">
 							<img class="logo" src="./theme/img/numeris1.png" alt="logo">
 							<img class="logo-alt" src="./theme/img/numeris1.png" alt="logo">
 						</a>
@@ -70,17 +76,20 @@
 
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="/">Accueil</a></li>
-					<li class="has-dropdown"><a href="/produitservice">Produits & Services</a>
+					<li><a href="/lentreprise">L'entreprise</a></li>
+					<li class="has-dropdown"><a href="#">Produits & Services</a>
 						<ul class="dropdown">
-							<li><a href="/produitservice#blog">Messagerie collaborative</a></li>
-							<li><a href="/produitservice#service">Nos Services</a></li>
-<!--							<li><a href=#features>blog post</a></li>-->
+							<li><a href="/messagerie-colaborative">Messagerie collaborative</a></li>
+							<li><a href="/service-dingenierie-informatique">Service d'ingénierie informatique</a></li>
+							<li><a href="/audit-et-securite">Audit et sécurité</a></li>
+							<li><a href="/equipement-mikrotik">Equipement Mikrotik</a></li>
 						</ul>	
 					</li>
-					<li><a href="/examens">Examens</a></li>
-					<li><a href="/carriere">Carrière</a></li>
-					<li><a href="/formations">Formations</a></li>
+					<li><a href="/centre-dexamens">Centre d'examens</a></li>
+					<li><a href="/formations">Formations</a></li>			
+					<li><a href="/rejoindre-lequipe">Rejoindre l'équipe</a></li>
+					<li><a href="/contact">Contact</a></li>
+					
 				</ul>
 				<!-- /Main navigation -->
 
@@ -118,14 +127,20 @@
 			<!-- Row -->
 			<div class="row">
 
-				<!-- Section-header -->
+				<!-- Section-header		
 				<div class="section-header text-center">
 					<h2 class="title">Contactez-Nous</h2>
 				</div>
-				<!-- /Section-header -->
+				 /Section-header -->
+				
+				<!-- contact -->
+				
+				{% block form %}{% endblock %}
+
+				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<i class="fa fa-phone"></i>
 						<h3>Telephone</h3>
@@ -135,7 +150,7 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Email</h3>
@@ -145,16 +160,23 @@
 				<!-- /contact -->
 
 				<!-- contact -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<div class="contact">
-						<i class="fa fa-map-marker"></i>
+						<a href="https://goo.gl/maps/vhSpPNkgERKSEWD16"><i class="fa fa-map-marker"></i></a>
 						<h3>Adresse</h3>
 						<p>C/1148 HOUEHOUN, Cotonou, Bénin</p>
 					</div>
 				</div>
 				<!-- /contact -->
+				<div class="col-sm-3">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16540.864566642555!2d2.409487032029273!3d6.382502656621779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjInNTQuMiJOIDLCsDI0JzUwLjMiRQ!5e0!3m2!1sfr!2sbj!4v1568299787015!5m2!1sfr!2sbj" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-				<!-- contact form -->
+				</div>
+				<!-- contact -->
+
+				<!-- /contact -->
+
+				<!-- contact form 
 				<div class="col-md-8 col-md-offset-2">
 					<form id="contactForm" action="contact-form.php" method="POST" class="contact-form">
 						<input type="text" class="input" name="name" id="name" required="" aria-required="true" placeholder="Nom">
@@ -164,7 +186,7 @@
 						<button type="submit" value="Send Message" name="submit" class="main-btn">Envoyer</button>
 					</form>
 				</div>
-				<!-- /contact form -->
+				 /contact form -->
 
 			</div>
 			<!-- /Row -->
@@ -189,14 +211,14 @@
 
 					<!-- footer logo -->
 					<div class="footer-logo">
-						<a href="index.php"><img src="./theme/img/numeris1.png" ></a>
+						<a href="/"><img src="./theme/img/numeris1.png" ></a>
 					</div>
 					<!-- /footer logo -->
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://facebook.com/numerisbenin"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/numerisbenin"><i class="fa fa-twitter"></i></a></li>
 						<!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>

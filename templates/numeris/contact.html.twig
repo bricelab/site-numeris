@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block metadescription %}
+	<meta name="description" content="Contact localisation mail de NUMERIS">
+{% endblock %}
+
+{% block backgroundimage %}
+	<div class="bg-img" style="background-image: url('./theme/img/5.jpg');">
+		<div class="overlay"></div>
+	</div>	
+{% endblock %}
+
+{% block form %}
+	<!-- Section-header	-->	
+	<div class="section-header text-center">
+		<h2 class="title">Contactez-Nous</h2>
+	</div>
+	<!-- /Section-header -->
+	<!-- contact form -->
+	<div class="col-md-8 col-md-offset-2">
+		{{ form_start(our_form) }}
+		{{ form_widget(our_form) }}
+		<button type="submit" value="Send Message" name="submit" class="main-btn">Envoyer</button>
+		
+		{{ form_end(our_form) }}
+		<!--<form id="contactForm" action="contact-form.php" method="POST" class="contact-form">
+			<input type="text" class="input" name="name" id="name" required="" aria-required="true" placeholder="Nom">
+			<input type="email" class="input" name="email" id="email" required="" aria-required="true" placeholder="Email">
+			<input type="text" class="input" name="subject" id="subject" required="" aria-required="true" placeholder="Objet">
+			<textarea class="input" name="message" id="message" required="" aria-required="true" placeholder="Message"></textarea>
+			
+		</form>-->
+	</div>
+	<!-- /contact form -->	
+{% endblock %}

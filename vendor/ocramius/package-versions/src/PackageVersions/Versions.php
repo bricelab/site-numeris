@@ -12,7 +12,7 @@ namespace PackageVersions;
  */
 final class Versions
 {
-    public const ROOT_PACKAGE_NAME = 'symfony/website-skeleton';
+    public const ROOT_PACKAGE_NAME = '__root__';
     public const VERSIONS          = array (
   'doctrine/annotations' => 'v1.7.0@fa4c4e861e809d6a1103bd620cce63ed91aedfeb',
   'doctrine/cache' => 'v1.8.0@d768d58baee9a4862ca783840eca1b9add7a7f57',
@@ -31,7 +31,9 @@ final class Versions
   'doctrine/persistence' => '1.1.1@3da7c9d125591ca83944f477e65ed3d7b4617c48',
   'doctrine/reflection' => 'v1.0.0@02538d3f95e88eb397a5f86274deb2c6175c2ab6',
   'egulias/email-validator' => '2.1.11@92dd169c32f6f55ba570c309d83f5209cefb5e23',
+  'excelwebzone/recaptcha-bundle' => 'v1.5.15@4e8e2b610b4e9260b3015b7e4bb9e64e6c5f6305',
   'fig/link-util' => '1.0.0@1a07821801a148be4add11ab0603e4af55a72fac',
+  'google/recaptcha' => '1.2.3@98c4a6573b27e8b0990ea8789c74ea378795134c',
   'jdorn/sql-formatter' => 'v1.2.17@64990d96e0959dff8e059dfcdc1af130728d92bc',
   'monolog/monolog' => '1.24.0@bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266',
   'ocramius/package-versions' => '1.4.0@a4d4b60d0e60da2487bd21a2c6ac089f85570dbb',
@@ -118,13 +120,13 @@ final class Versions
   'symfony/var-dumper' => 'v4.3.3@e4110b992d2cbe198d7d3b244d079c1c58761d07',
   'symfony/web-profiler-bundle' => 'v4.3.3@a7886865c523a7751ee39480a25b663b82d00846',
   'symfony/web-server-bundle' => 'v4.3.3@a5391b6a4ac78d518dd3f0ee5f40bcc9a7ee6fe7',
-  'paragonie/random_compat' => '2.*@',
-  'symfony/polyfill-ctype' => '*@',
-  'symfony/polyfill-iconv' => '*@',
-  'symfony/polyfill-php71' => '*@',
-  'symfony/polyfill-php70' => '*@',
-  'symfony/polyfill-php56' => '*@',
-  'symfony/website-skeleton' => 'v4.3.99@',
+  'paragonie/random_compat' => '2.*@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
+  'symfony/polyfill-ctype' => '*@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
+  'symfony/polyfill-iconv' => '*@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
+  'symfony/polyfill-php71' => '*@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
+  'symfony/polyfill-php70' => '*@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
+  'symfony/polyfill-php56' => '*@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
+  '__root__' => 'dev-squelette@0fb523b7800a60c2ccae24a6bebcbef8f8027b85',
 );
 
     private function __construct()
