@@ -8,7 +8,7 @@
 	{% block metadescription %}{% endblock %}
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>NUMERIS {{ app.request.pathinfo|replace({'/': " ",'-': " "}) }}</title>
+	<title>NUMERIS SARL</title>
 	<!-- Favicons -->
 	<link href="{{ absolute_url(asset("theme/img/N.png")) }}" rel="icon">
 	<link href="{{ absolute_url(asset("theme/img/N02.png")) }}" rel="apple-touch-icon">
@@ -48,9 +48,15 @@
 
 <body>
 	<!-- Header -->
-	<header id="home">
+	{% if home is defined %}
+	<header id="{{ home }}">
+	{% else %}
+	<header id="">
+	{% endif %}
 		<!-- Background Image -->
-		{% block backgroundimage %}{% endblock %}
+		<div class="bg-img" style="background-image: url('./theme/img/5.jpg');">
+			<div class="overlay"></div>
+		</div>
 		<!-- /Background Image -->
 
 		<!-- Nav -->
@@ -126,20 +132,17 @@
 
 			<!-- Row -->
 			<div class="row">
-
-				<!-- Section-header		
-				<div class="section-header text-center">
-					<h2 class="title">Contactez-Nous</h2>
-				</div>
-				 /Section-header -->
-				
-				<!-- contact -->
 				
 				{% block form %}{% endblock %}
 
 				<!-- /contact -->
 
-				<!-- contact -->
+			</div>
+			<!-- /Row -->
+
+			<!-- Row -->
+			<div class="row">
+			<!-- contact -->
 				<div class="col-sm-3">
 					<div class="contact">
 						<i class="fa fa-phone"></i>
@@ -173,23 +176,8 @@
 
 				</div>
 				<!-- contact -->
-
-				<!-- /contact -->
-
-				<!-- contact form 
-				<div class="col-md-8 col-md-offset-2">
-					<form id="contactForm" action="contact-form.php" method="POST" class="contact-form">
-						<input type="text" class="input" name="name" id="name" required="" aria-required="true" placeholder="Nom">
-						<input type="email" class="input" name="email" id="email" required="" aria-required="true" placeholder="Email">
-						<input type="text" class="input" name="subject" id="subject" required="" aria-required="true" placeholder="Objet">
-						<textarea class="input" name="message" id="message" required="" aria-required="true" placeholder="Message"></textarea>
-						<button type="submit" value="Send Message" name="submit" class="main-btn">Envoyer</button>
-					</form>
-				</div>
-				 /contact form -->
-
-			</div>
-			<!-- /Row -->
+			</div>	
+			<!-- /Row -->	
 
 		</div>
 		<!-- /Container -->

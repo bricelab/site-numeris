@@ -15,7 +15,7 @@ class NumerisController extends AbstractController
     public function index()
     {
         return $this->render('numeris/index.html.twig', [
-            'controller_name' => 'NumerisController',
+            'home' => 'home',
         ]);
     }
 
@@ -86,16 +86,19 @@ class NumerisController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $contactFormData = $form->getData();
             /*dump($contactFormData);*/
-            $message = (new \Swift_Message($contactFormData['Objet']))
-            ->setFrom($contactFormData['Email'])
-            ->setTo('adissalagnika23@gmail.com')
-            ->setBody($contactFormData['Message'],'text/plain');
-            $mailer->send($message);
+            $message = (new \Swift_Message($contactFormData['objet']))
+            ->setFrom($contactFormData['email'], $contactFormData['nom'])
+            ->setTo('infos@numeris.bj')
+            //->setFrom('infos@numeris.bj')
+            //->setTo($contactFormData['Email'])
+            ->setBody($contactFormData['message'],'text/html');
+            $res = $mailer->send($message);
+            //dd($res);
             return $this->redirectToRoute('contact');
         }  
 
 
-    return $this->render('numeris/contact.html.twig',['our_form'=>$form->CreateView(),]);
+    return $this->render('numeris/contact.html.twig',['form' => $form->CreateView(),]);
 }
 
 }

@@ -13,23 +13,22 @@
 {% block form %}
 	<!-- Section-header	-->	
 	<div class="section-header text-center">
-		<h2 class="title">Contactez-Nous</h2>
+		<h2 class="title">NOUS CONTACTER</h2>
 	</div>
 	<!-- /Section-header -->
 	<!-- contact form -->
 	<div class="col-md-8 col-md-offset-2">
-		{{ form_start(our_form) }}
-		{{ form_widget(our_form) }}
-		<button type="submit" value="Send Message" name="submit" class="main-btn">Envoyer</button>
+		{{ form_start(form, { 'attr': {'class': 'contact-form', 'id': 'contactForm'} } ) }}
+    		{{ form_widget(form.nom, { 'attr': {'class': 'input', 'id': 'name', 'placeholder': 'Nom'} }) }}
+			{{ form_widget(form.email, { 'attr': {'class': 'input', 'id': 'email', 'placeholder': 'Email'} }) }}
+			{{ form_widget(form.objet, { 'attr': {'class': 'input', 'id': 'subject', 'placeholder': 'Objet'} }) }}
+			{{ form_widget(form.message, { 'attr': {'class': 'input', 'id': 'message', 'placeholder': 'Message'} }) }}
+			{{ form_widget(form.recaptcha, { 'attr': {'class': 'input'} } ) }}
+		{{ form_widget(form) }}
+		<button type="submit" value="Send Message" name="submit" class="main-btn" style="display: block; float: right; margin-top: -65px;">Envoyer</button>
 		
-		{{ form_end(our_form) }}
-		<!--<form id="contactForm" action="contact-form.php" method="POST" class="contact-form">
-			<input type="text" class="input" name="name" id="name" required="" aria-required="true" placeholder="Nom">
-			<input type="email" class="input" name="email" id="email" required="" aria-required="true" placeholder="Email">
-			<input type="text" class="input" name="subject" id="subject" required="" aria-required="true" placeholder="Objet">
-			<textarea class="input" name="message" id="message" required="" aria-required="true" placeholder="Message"></textarea>
-			
-		</form>-->
+		{{ form_end(form) }}
+		
 	</div>
 	<!-- /contact form -->	
 {% endblock %}

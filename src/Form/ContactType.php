@@ -16,10 +16,10 @@ class ContactType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Nom', TextType::class)
-            ->add('Email', EmailType::class)
-            ->add('Objet', TextType::class)
-            ->add('Message', TextareaType::class)
+            ->add('nom', TextType::class)
+            ->add('email', EmailType::class)
+            ->add('objet', TextType::class)
+            ->add('message', TextareaType::class)
             ->add('recaptcha', EWZRecaptchaType::class, array(
             'attr'        => array(
             'options' => array(
@@ -31,7 +31,8 @@ class ContactType extends AbstractType
         'mapped'      => false,
         'constraints' => array(
             new RecaptchaTrue()
-        )
+        ),
+        'language' => 'fr'
     ));
     }
 
